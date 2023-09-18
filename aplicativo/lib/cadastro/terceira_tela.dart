@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import 'package:aplicativo/splash/primeira_tela.dart';
+=======
+>>>>>>> origin/main
 import 'package:flutter/material.dart';
 
 class LoginInicial extends StatefulWidget {
@@ -9,10 +12,16 @@ class LoginInicial extends StatefulWidget {
 }
 
 class _LoginInicialState extends State<LoginInicial> {
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/main
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+<<<<<<< HEAD
         padding: EdgeInsets.only(
           top: 56,
           left: 40,
@@ -109,5 +118,20 @@ class _LoginInicialState extends State<LoginInicial> {
         ),
       ),
     );
+=======
+        padding: EdgeInsets.only(top: 60, left: 40, right: 40,
+        ),
+        color: Colors.white,
+        child: ListView(
+          children: <Widget> [
+          SizedBox(
+            width: 248,
+            height: 26,
+            child: Image.asset('assets/images/welcome.jpg'),
+          )
+          ]
+        )
+        ,),)
+>>>>>>> origin/main
   }
 }
