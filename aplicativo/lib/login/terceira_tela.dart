@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+import 'package:aplicativo/home/home_page.dart';
 import 'package:aplicativo/splash/primeira_tela.dart';
-=======
->>>>>>> origin/main
 import 'package:flutter/material.dart';
+import 'package:aplicativo/home/home_page.dart';
 
 class LoginInicial extends StatefulWidget {
   const LoginInicial({Key? key}) : super(key: key);
@@ -12,16 +11,10 @@ class LoginInicial extends StatefulWidget {
 }
 
 class _LoginInicialState extends State<LoginInicial> {
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/main
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-<<<<<<< HEAD
         padding: EdgeInsets.only(
           top: 56,
           left: 40,
@@ -47,19 +40,21 @@ class _LoginInicialState extends State<LoginInicial> {
               height: 35,
             ),
             Container(
+              height: 70,
+              width: 320,
               decoration: BoxDecoration(
                   border: Border.all(
                     color: Colors.black38,
                     width: 2.0,
                   ),
-                  borderRadius: BorderRadius.circular(6.0)),
+                  borderRadius: BorderRadius.circular(10.0)),
               child: TextFormField(
                 decoration: InputDecoration(
                   labelText: "Username",
                   labelStyle: TextStyle(
                     color: Colors.black38,
                     fontWeight: FontWeight.normal,
-                    fontSize: 20,
+                    fontSize: 18,
                   ),
                 ),
                 style: TextStyle(fontSize: 20),
@@ -69,13 +64,15 @@ class _LoginInicialState extends State<LoginInicial> {
               height: 14,
             ),
             Container(
+              height: 70,
+              width: 320,
               decoration: BoxDecoration(
                 border: Border.all(
                   color: Colors.black38,
                   width: 2.0, // Define a largura da borda da caixa
                 ),
                 borderRadius:
-                    BorderRadius.circular(6.0), // Define a borda arredondada
+                    BorderRadius.circular(10.0), // Define a borda arredondada
               ),
               child: TextFormField(
                 obscureText: true, // Oculta o texto
@@ -84,7 +81,7 @@ class _LoginInicialState extends State<LoginInicial> {
                   labelStyle: TextStyle(
                     color: Colors.black38,
                     fontWeight: FontWeight.normal,
-                    fontSize: 20,
+                    fontSize: 18,
                   ),
                 ),
                 style: TextStyle(fontSize: 20),
@@ -96,13 +93,15 @@ class _LoginInicialState extends State<LoginInicial> {
             InkWell(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => PrimeiraTela()));
+                    MaterialPageRoute(builder: (context) => HomeApp()));
                 // Coloque aqui a ação que deseja executar ao clicar no último container
               },
               child: Container(
                 width: 327,
                 height: 48,
-                color: Colors.black,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(10.0),),
                 child: Center(
                   child: Text(
                     "Sign In",
@@ -118,20 +117,5 @@ class _LoginInicialState extends State<LoginInicial> {
         ),
       ),
     );
-=======
-        padding: EdgeInsets.only(top: 60, left: 40, right: 40,
-        ),
-        color: Colors.white,
-        child: ListView(
-          children: <Widget> [
-          SizedBox(
-            width: 248,
-            height: 26,
-            child: Image.asset('assets/images/welcome.jpg'),
-          )
-          ]
-        )
-        ,),)
->>>>>>> origin/main
   }
 }

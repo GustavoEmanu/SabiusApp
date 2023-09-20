@@ -10,6 +10,9 @@ class PrimeiraTela extends StatefulWidget {
 class _PrimeiraTelaState extends State<PrimeiraTela> {
   @override
   Widget build(BuildContext context) {
+      Future.delayed(Duration(seconds: 4), () {
+      Navigator.pushReplacementNamed(context, '/other');
+    });
     return Scaffold(
         backgroundColor: Colors.white,
         body: Center(
